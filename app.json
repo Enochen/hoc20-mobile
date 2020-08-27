@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "moody",
+    "slug": "moody",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,11 +15,20 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.moody.app",
+      "googleServicesFile": "./google-services.json"
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.moody.app",
+      "supportsTablet": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.750767499479-6rdvap65nu6an2vi13ju4pukmom8m5vs"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

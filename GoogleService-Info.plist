@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>750767499479-6rdvap65nu6an2vi13ju4pukmom8m5vs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.750767499479-6rdvap65nu6an2vi13ju4pukmom8m5vs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCHd2gMavQE-yH6Gq4pitZSxvh-pLKW4Ds</string>
+	<key>GCM_SENDER_ID</key>
+	<string>750767499479</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.moody.app</string>
+	<key>PROJECT_ID</key>
+	<string>hoc20-moody</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hoc20-moody.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:750767499479:ios:ec91b998176d9a56022892</string>
+	<key>DATABASE_URL</key>
+	<string>https://hoc20-moody.firebaseio.com</string>
+</dict>
+</plist>

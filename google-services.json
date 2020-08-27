@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "750767499479",
+    "firebase_url": "https://hoc20-moody.firebaseio.com",
+    "project_id": "hoc20-moody",
+    "storage_bucket": "hoc20-moody.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750767499479:android:777fd76e831aa5a0022892",
+        "android_client_info": {
+          "package_name": "com.moody.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750767499479-r963k72p8sikfucpqr37t71rvboeq9ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFuWWVN0b5Y1ko2uKFy_Q7hmaFOio1in4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750767499479-r963k72p8sikfucpqr37t71rvboeq9ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

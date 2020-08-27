@@ -61,7 +61,7 @@ function HomeNavigator() {
       <HomeStack.Screen
         name="Home"
         component={Home}
-        options={{ headerTitle: 'Tab One Title' }}
+        options={{ headerTitle: 'Home' }}
       />
     </HomeStack.Navigator>
   );
@@ -75,7 +75,7 @@ function ChatNavigator() {
       <ChatStack.Screen
         name="Chat"
         component={Chat}
-        options={{ headerTitle: 'Tab Two Title' }}
+        options={{ headerTitle: 'Chat' }}
       />
     </ChatStack.Navigator>
   );
@@ -89,7 +89,7 @@ function ProfileNavigator() {
       <ProfileStack.Screen
         name="Profile"
         component={Profile}
-        options={{ headerTitle: 'Tab Three Title' }}
+        options={{ headerTitle: 'Profile' }}
       />
     </ProfileStack.Navigator>
   );
