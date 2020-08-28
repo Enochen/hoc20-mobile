@@ -1,58 +1,60 @@
 import * as React from "react";
-import { Text, Button, View, StatusBar, StyleSheet, ColorSchemeName } from "react-native";
+import {
+  Text,
+  Button,
+  View,
+  StatusBar,
+  StyleSheet,
+  ColorSchemeName,
+} from "react-native";
 import * as GoogleSignIn from "expo-google-sign-in";
 import { useState, useEffect } from "react";
-import Navigation from "../navigation";
+import Navigation, { AuthContext } from "../navigation";
+import AsyncStorage from "@react-native-community/async-storage";
 
-type Props = {
-  colorScheme: ColorSchemeName;
-};
-
-export default ({ colorScheme }: Props) => {
-  const [user, setUser] = useState<GoogleSignIn.GoogleUser>();
+export default () => {
+  
+  const { signIn } = React.useContext(AuthContext);
 
   useEffect(() => {
-    const stuff = async () => {
+    const tryLogin = async () => {
       await GoogleSignIn.initAsync();
       const res = await GoogleSignIn.signInSilentlyAsync();
-      if (res) {
-        setUser(res);
+      const userToken = res?.auth?.idToken;
+      if (userToken) {
+        await signIn(userToken);
       } else {
         throw new Error("auth error");
       }
     };
-    stuff();
+    tryLogin();
   }, []);
 
   const signInAsync = async () => {
-    try {
-      await GoogleSignIn.askForPlayServicesAsync();
-      const { type, user } = await GoogleSignIn.signInAsync();
-      if (type === "success") {
-        const res = await GoogleSignIn.signInSilentlyAsync();
-        if (res) {
-          setUser(res);
-        } else {
-          throw new Error("auth error");
-        }
-      }
-    } catch ({ message }) {
-      alert("login: Error:" + message);
-    }
+    // try {
+    //   await GoogleSignIn.askForPlayServicesAsync();
+    //   const { type, user } = await GoogleSignIn.signInAsync();
+    //   if (type === "success") {
+    //     const res = await GoogleSignIn.signInSilentlyAsync();
+    //     if (res) {
+    //       setUser(res);
+    //     } else {
+    //       throw new Error("auth error");
+    //     }
+    //   }
+    // } catch ({ message }) {
+    //   alert("login: Error:" + message);
+    // }
+    const user = new GoogleSignIn.GoogleUser({});
+    const userToken = user?.auth?.idToken;
+    await signIn("hi");
   };
 
-  console.log(user);
-
-  const smth = user ? (
-    <>
-      <Navigation colorScheme={colorScheme} />
-      <StatusBar />
-    </>
-  ) : (
-    <Button title="Log In" onPress={signInAsync} />
+  return (
+    <View style={styles.container}>
+      <Button title="Log In" onPress={signInAsync} />
+    </View>
   );
-
-  return <View style={styles.container}>{smth}</View>;
 };
 
 const styles = StyleSheet.create({
