@@ -19,4 +19,5 @@ export default function App() {
       <StatusBar />
     </SafeAreaProvider>
   ) : null;
+
 }
