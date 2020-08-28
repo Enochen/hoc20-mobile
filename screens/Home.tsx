@@ -294,6 +294,7 @@ export default function Home() {
               <Grid />
             </BarChart>
           </TouchableOpacity>
+
         </Card>
       </View>
     </ScrollView>

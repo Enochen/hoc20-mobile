@@ -9,6 +9,8 @@ import Login from "./screens/Login";
 import { GoogleUser } from "expo-google-sign-in";
 import AsyncStorage from "@react-native-community/async-storage";
 
+console.disableYellowBox = true;
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();

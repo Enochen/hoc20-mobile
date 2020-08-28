@@ -1,15 +1,11 @@
 import * as React from "react";
 import {
-  Text,
   View,
-  StatusBar,
   StyleSheet,
-  ColorSchemeName,
 } from "react-native";
 import * as GoogleSignIn from "expo-google-sign-in";
-import { useState, useEffect } from "react";
-import Navigation, { AuthContext } from "../navigation";
-import AsyncStorage from "@react-native-community/async-storage";
+import {  useEffect } from "react";
+import { AuthContext } from "../navigation";
 import { Button } from 'react-native-elements';
 import { Dimensions } from "react-native";
 
@@ -48,7 +44,6 @@ export default () => {
     //   alert("login: Error:" + message);
     // }
     const user = new GoogleSignIn.GoogleUser({});
-    const userToken = user?.auth?.idToken;
     await signIn("hi");
   };
 
