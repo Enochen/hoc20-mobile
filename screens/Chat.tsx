@@ -30,7 +30,7 @@ export default function Chat() {
 
   const [messages, setMessages] = useState<Message[]>([{
     _id: 1,
-    text: 'Hi! I am the Moody 🤖.\n\nHow may I help you today?',
+    text: 'Hi! I am the Moody 🤖.\n\n What is your mood today?',
     createdAt: new Date(),
     user: BOT_USER
   }]);
