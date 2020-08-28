@@ -5,8 +5,12 @@ import { Text, View } from '../components/Themed';
 import { ScrollView } from 'react-native-gesture-handler';
 import { Card } from 'react-native-elements';
 import { Button } from 'react-native-elements';
+import { AuthContext } from '../navigation';
 
-export default function Profile() {
+export default () => {
+
+  const { signOut } = React.useContext(AuthContext);
+
   return (
 
     <View style={styles.container}>
@@ -53,6 +57,7 @@ export default function Profile() {
       <Button
         title="Sign Out"
         style={{ marginBottom: '10%', width: '90%', justifyContent: 'center', alignSelf: 'center', borderRadius: 10 }}
+        onPress={signOut}
       />
 
 

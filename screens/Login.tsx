@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   Text,
-  Button,
   View,
   StatusBar,
   StyleSheet,
@@ -11,10 +10,13 @@ import * as GoogleSignIn from "expo-google-sign-in";
 import { useState, useEffect } from "react";
 import Navigation, { AuthContext } from "../navigation";
 import AsyncStorage from "@react-native-community/async-storage";
+import { Button } from 'react-native-elements';
+import { Dimensions } from "react-native";
 
 export default () => {
-  
+
   const { signIn } = React.useContext(AuthContext);
+  const screenWidth = Dimensions.get("window").width;
 
   useEffect(() => {
     const tryLogin = async () => {
@@ -52,7 +54,7 @@ export default () => {
 
   return (
     <View style={styles.container}>
-      <Button title="Log In" onPress={signInAsync} />
+      <Button title="Log In" onPress={signInAsync} style={{ width: screenWidth * .9, borderRadius: 10 }} />
     </View>
   );
 };
