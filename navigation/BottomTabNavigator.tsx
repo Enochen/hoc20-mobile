@@ -10,6 +10,7 @@ import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import Chat from '../screens/Chat';
 import { BottomTabParamList, HomeParamList, ChatParamList, ProfileParamList } from '../types';
+import DetailedStats, { StatsType } from '../screens/DetailedStats';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -62,6 +63,12 @@ function HomeNavigator() {
         name="Home"
         component={Home}
         options={{ headerTitle: 'Home' }}
+      />
+      <HomeStack.Screen
+        name="DetailedStats"
+        component={DetailedStats}
+        initialParams={{type: StatsType.Stress, data: []}}
+        options={{ headerTitle: 'Stats' }}
       />
     </HomeStack.Navigator>
   );
