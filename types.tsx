@@ -1,3 +1,6 @@
+import { DetailedStatsProps } from "./screens/DetailedStats";
+import { RouteProp } from "@react-navigation/native";
+
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
@@ -11,6 +14,7 @@ export type BottomTabParamList = {
 
 export type HomeParamList = {
   Home: undefined;
+  DetailedStats: DetailedStatsProps;
 };
 
 export type ChatParamList = {
