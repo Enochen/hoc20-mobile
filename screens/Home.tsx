@@ -4,6 +4,7 @@ import {
   ScrollView,
   TextInput,
   TouchableOpacity,
+  Alert
 } from "react-native";
 /* import {
   LineChart, BarChart, PieChart, ProgressChart, ContributionGraph, StackedBarChart
@@ -19,12 +20,14 @@ import navigation from "../navigation";
 import { useNavigation } from "@react-navigation/native";
 import { HomeParamList } from "../types";
 import { StatsType } from "./DetailedStats";
+import { Button } from 'react-native-elements';
 
 export default function Home() {
   const [stress, setStress] = useState(5);
   const [energy, setEnergy] = useState(5);
   const [mood, setMood] = useState(5);
   const [text, setText] = useState("");
+  const [info, setInfo] = useState<string[]>([]);
 
   const screenWidth = Dimensions.get("window").width;
 
@@ -34,6 +37,19 @@ export default function Home() {
   const dataMood = [3, 5, 24, 13, 10, 14];
 
   const navigation = useNavigation();
+
+  const onSubmit = (text: string) => {
+    setInfo([...info, text])
+    setText("")
+    Alert.alert(
+      "Mood Recorded",
+      "Thanks for recording your mood today! You can view your past moods on your profile.",
+      [
+        { text: "OK", onPress: () => console.log("OK Pressed") }
+      ],
+      { cancelable: false }
+    );
+  }
 
   return (
     //What is rendered
@@ -208,6 +224,12 @@ export default function Home() {
             onChangeText={(text) => setText(text)}
             value={text}
             multiline={true}
+          />
+
+          <Button
+            title="Submit"
+            style={{ marginBottom: '2%', width: '90%', justifyContent: 'center', alignSelf: 'center', borderRadius: 20, }}
+            onPress={onSubmit}
           />
         </Card>
 
