@@ -1,0 +1,12 @@
+export const dialogflowConfig = {
+  "type": "service_account",
+  "project_id": "moody-qbbs",
+  "private_key_id": "1f5dded6e88d12830ccc4859c2ade36efa358766",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQ4qOP1+zoMmdS\nL631hN4KLXkqJl0KooDDPkergS8kjgo4R6lTYdLljPM+8h2nrCoYr4NpyqA4Z/h6\n9RYVCY2kcvWNoFBOLXF0lGP/jf/Yf+INJzB2BgY4y7IC0tnEoQBohK7AeoZ1Qxfo\nvux7USB7JD+WOiH0NjNt6KpJmmLv1AoBSNh33/Z10pHIQefbG9/7yjKVHWYUVyFw\nIB8J9VLY+p5V5l7eRJ5d4dSYliDkB4rO0DRLlEOj6eXeYA5LkSvL9s30z1U5wo+8\nAheVEHDhdJMtGxXxvz3JqH6MIlkFJiO9kZ3w+SYlZ0veTeZlhLMWVu0RAzHRf3xl\nwVwkO4dxAgMBAAECggEAASaTzTcN9jl+zl4fihNSHz+DV6r4sNs64OwoI5U2s9V2\n8L4sHO2UacmRgFett+LYcscVJsGuyu+GDG+O1vfam2KkRmuoyoPReBSUQ+5jgPvD\nxk7GSua3B82ULXZeWkda03o2aIpEQHtfxyoYI2fSSURmkf2y3NoNH7VCqnp3c4Vs\nwA+Xm4RtxoSOPttZ6kmybTPAbrawFRpkE2ZG/o770Pr9gfrzXrFG4/aINGnWCWeT\n6fiv1zucjOHmieMJBEJdOYi8pqBCnP/fsmct1y2ODXWgaVHDZM7tPxPCQyr9GJlQ\nwRioF2izhRjVIkpEGcRJujMoRZpgO5nu4tetEvWkAQKBgQD2Z5C6rJgLjvFfNSbp\nXNaVHwIA+OvYMkbTpR0ahHeR9pfNL2kS+Y8equc39nYfqBEgu6FWzTGZRRF493qt\nEfLKREH/ZK1Wcxjy5eCfOdN+6eLabaFNCUW/zobrUmPiwJeFvQacE0BT9J3vvXre\n29UzTx142FBkDJI4ov2CpO5CjwKBgQDZBQo+D9ZGDH/bNZwL8vtnbMPDD981OzgM\nvdoxYh//KhGPzr8HrHfwo1ohFxPwrobcd6E3cQdBcDwb0Pric+A83/zuJFwGiY2z\nXg4Y8Iob5v8on2NjYCNhbsgwWagqajFLRhaHWMvVycXjE940+BnSThaJpV3K/EOA\nOp72nDaV/wKBgFtmc0MrfoLbFSHR34s0yswp4l5l92YM0ET1vGP3uzrDk++ipIFL\nXRFtJ7OUkqCPgTr5HpHKL5nBCwgqFLFaNQteYnTP7ZRhwWFob/fgRVmQfHu1qt2e\nkObjPxzPRQn5krsjMO54HaaG2IbzbD56oQ0VTcNjyf4yw5KKsyrg7xh1AoGAKrQz\nL8MuBtquzhPegPtvPQrJ+rhE09SzUs6JAO6uHSfKDOJB9OCbOV7rfVdtNQ8iun9P\n2fkD1HyhV1foBmeG2HO68aF1+lNW7tSzMXUjuBncW8IBbKyeSa3i9qCt1qrOyGEi\nTb/LXGY36lcego3PhvKWvL8tlaPOJI1kemKC20ECgYEAuzzxY4G2c0ybOAtmwMHV\nfDXT9IbdSy7t01Y/R7ypzFU6OD78npWYeBYkORYWvvXOuB5gaM1PFq6BwaEwk4Mv\nV/ITXEm14TixtLr1AdRtGl+kNP4a6y+i+5ONvoCebt8RCEPJOcgiYbHsoadkCTk/\nZs7UKVVqQzE/IbeujCTlRd8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-ymowyb@moody-qbbs.iam.gserviceaccount.com",
+  "client_id": "114061474552825741127",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-ymowyb%40moody-qbbs.iam.gserviceaccount.com"
+}
