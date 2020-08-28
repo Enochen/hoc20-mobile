@@ -27,8 +27,8 @@ type Context = {
 };
 
 const initContext: Context = {
-  signIn: async () => {},
-  signOut: async () => {},
+  signIn: async () => { },
+  signOut: async () => { },
 };
 
 export const AuthContext = React.createContext(initContext);
@@ -54,7 +54,7 @@ export default ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
         if (userToken !== null) {
           dispatch({ type: "SIGN_IN", userToken });
         }
-      } catch (e) {}
+      } catch (e) { }
     };
     bootstrapAsync();
   }, []);
@@ -66,6 +66,7 @@ export default ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
         dispatch({ type: "SIGN_IN", userToken });
       },
       signOut: async () => {
+        await AsyncStorage.removeItem("userToken");
         dispatch({ type: "SIGN_OUT" });
       },
     }),
@@ -114,3 +115,11 @@ function AuthNavigator() {
     </AuthStack.Navigator>
   );
 }
+/* <AuthStack.Screen name="Login" component={Login} />
+    </AuthStack.Navigator >
+  );
+}
+<AuthStack.Screen name="Login" component={Login} />
+    </AuthStack.Navigator >
+  );
+} */
