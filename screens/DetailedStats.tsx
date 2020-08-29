@@ -28,9 +28,9 @@ type Props = {
 export default ({ route }: Props) => {
   const { data, type }: DetailedStatsProps = route.params;
   return (
-    <ScrollView horizontal={true} >
-    <View >
+    <View style={styles.container}>
       <Text style={styles.title}>Detailed Stats for {type}</Text>
+      <ScrollView horizontal={true}>
         <BarChart
           style={styles.graph}
           data={data}
@@ -40,8 +40,8 @@ export default ({ route }: Props) => {
         >
           <Grid />
         </BarChart>
+      </ScrollView>
     </View>
-    </ScrollView>
   );
 };
 
