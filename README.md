@@ -5,7 +5,7 @@
 A mobile app for recording daily moods and communicating with a chat bot for advice/inspiration created using `React Native` and `TypeScript`.
 
 # Splash
-![Imgur](https://i.imgur.com/7zyDLY9.jpg)
+![Imgur](https://i.imgur.com/ukyafsd.jpg)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -60,21 +60,16 @@ Enoch Chen - [@Enochen](https://github.com/Enochen) - yc728@cornell.edu <br/>
 Jessica Feng - [@jessfeng](https://github.com/jessfeng) - jyf5@cornell.edu <br/>
 Tony Yang - [@tyang98](https://github.com/tyang98) - txy3@cornell.edu 
 
-Project Link: [https://github.com/tyang98/media-rec](https://github.com/tyang98/media-rec)
+Project Link: [https://github.com/Enochen/hoc20-mobile](https://github.com/Enochen/hoc20-mobile)
 
 <!-- Screenshots -->
 ## Screenshots
-
-Home: 
 ![Imgur](https://i.imgur.com/nzbHvsa.png)
 
-Chat: 
 ![Imgur](https://i.imgur.com/XYFHFDT.png)
 
-Past Moods:
 ![Imgur](https://i.imgur.com/L7wy59a.png)
 
-Trends
 ![Imgur](https://i.imgur.com/ucK5nCy.png)
 
 
