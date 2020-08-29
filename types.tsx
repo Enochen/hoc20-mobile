@@ -8,7 +8,7 @@ export type RootStackParamList = {
 export type BottomTabParamList = {
   Home: undefined;
   Chat: undefined;
-  Profile: undefined;
+  Mood: undefined;
 };
 
 export type HomeParamList = {
@@ -20,7 +20,7 @@ export type ChatParamList = {
   Chat: undefined;
 };
 
-export type ProfileParamList = {
-  Profile: undefined;
+export type MoodParamList = {
+  Mood: undefined;
 };
 
