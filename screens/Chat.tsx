@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ImageBackground } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { GiftedChat } from 'react-native-gifted-chat';
@@ -23,14 +23,14 @@ type Message = {
 const BOT_USER: User = {
   _id: 2,
   name: 'Health Bot',
-  avatar: 'https://previews.123rf.com/images/iulika1/iulika11909/iulika1190900021/129697389-medical-worker-health-professional-avatar-medical-staff-doctor-icon-isolated-on-white-background-vec.jpg'
+  avatar: 'https://i.imgur.com/dv3lHZT.png'
 };
 
 export default function Chat() {
 
   const [messages, setMessages] = useState<Message[]>([{
     _id: 1,
-    text: 'Hi! I am the Moody 🤖.\n\n What is your mood today?',
+    text: 'Hi! I am the Moody 🤖.\n\nWhat is your mood today?',
     createdAt: new Date(),
     user: BOT_USER
   }]);
@@ -72,13 +72,15 @@ export default function Chat() {
 
   return (
     <View style={styles.container}>
-      <GiftedChat
-        messages={messages}
-        onSend={onSend}
-        user={{
-          _id: 1
-        }}
-      />
+      <ImageBackground source={require('../assets/images/background.png')} style={styles.image}>
+        <GiftedChat
+          messages={messages}
+          onSend={onSend}
+          user={{
+            _id: 1
+          }}
+        />
+      </ImageBackground>
     </View>
   );
 }
@@ -86,6 +88,11 @@ export default function Chat() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
   },
   title: {
     fontSize: 20,
