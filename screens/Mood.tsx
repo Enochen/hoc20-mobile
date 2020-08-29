@@ -61,70 +61,11 @@ export default () => {
   return (
 
     <View style={styles.container}>
-
       <ImageBackground
         source={require("../assets/images/background.png")}
         style={styles.image}
       >
-        <Text style={{
-          fontSize: 30,
-          fontWeight: "bold",
-          marginLeft: "5%",
-          marginBottom: '5%'
-        }}>Profile</Text>
-        <View
-          style={{
-            marginLeft: "2%",
-            marginRight: '2%',
-            width: '95%',
-            backgroundColor: '#C4FAF8',
-            justifyContent: 'center',
-            alignSelf: 'center',
-            height: '35%',
-            flexDirection: "row",
-            borderRadius: 10,
-          }}
-        >
-          <Image
-            source={require("../assets/images/sample.png")}
-            style={{
-              width: 150,
-              height: 150,
-              borderRadius: 400 / 2,
-              backgroundColor: "white",
-              borderColor: "white",
-              marginLeft: '3%',
-              marginTop: '3%'
-            }}
-          />
-
-          <View style={{ flex: 1, flexDirection: "column", borderRadius: 10, backgroundColor: '#C4FAF8' }}>
-            <Text
-              style={{ fontSize: 30, fontWeight: "bold", marginLeft: "10%", marginTop: '10%', color: 'black' }}
-            >
-              Enoch Chen
-            </Text>
-            <Text
-              style={{
-                fontSize: 20,
-                fontWeight: "bold",
-                marginLeft: "10%",
-                marginTop: "5%",
-                color: 'black'
-              }}
-            >
-              enochen.me
-            </Text>
-          </View>
-        </View>
-
-
-        <Text
-          style={styles.title}
-        >
-          Past Moods
-          </Text>
-
+        <Text style={styles.title}> Past Moods </Text>
         <Card
           containerStyle={{
             backgroundColor: "#FAE3FF",
@@ -132,7 +73,7 @@ export default () => {
             borderRadius: 10,
             alignContent: "center",
             marginTop: "5%",
-            height: "35%",
+            height: "75%",
           }}
         >
           <ScrollView>
@@ -165,7 +106,6 @@ export default () => {
 
 const styles = StyleSheet.create({
   container: {
-
     flex: 1,
   },
   image: {
@@ -177,15 +117,16 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     marginLeft: "5%",
-    marginTop: '2%'
+    marginTop: '2%',
   },
   item: {
-    padding: 20,
+    padding: 10,
     marginVertical: 8,
     marginHorizontal: 16,
   },
   otherTitle: {
-    fontSize: 15,
+    marginLeft: '5%',
+    fontSize: 20,
     color: "black",
   },
 });
