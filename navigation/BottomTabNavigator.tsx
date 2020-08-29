@@ -7,9 +7,9 @@ import * as React from 'react';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import Home from '../screens/Home';
-import Profile from '../screens/Profile';
+import Mood from '../screens/Mood';
 import Chat from '../screens/Chat';
-import { BottomTabParamList, HomeParamList, ChatParamList, ProfileParamList } from '../types';
+import { BottomTabParamList, HomeParamList, ChatParamList, MoodParamList } from '../types';
 import DetailedStats, { StatsType } from '../screens/DetailedStats';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -36,8 +36,8 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Profile"
-        component={ProfileNavigator}
+        name="Mood"
+        component={MoodNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="person-outline" color={color} />,
         }}
@@ -88,17 +88,17 @@ function ChatNavigator() {
   );
 }
 
-const ProfileStack = createStackNavigator<ProfileParamList>();
+const MoodStack = createStackNavigator<MoodParamList>();
 
-function ProfileNavigator() {
+function MoodNavigator() {
   return (
-    <ProfileStack.Navigator>
-      <ProfileStack.Screen
-        name="Profile"
-        component={Profile}
-        options={{ headerTitle: 'Profile' }}
+    <MoodStack.Navigator>
+      <MoodStack.Screen
+        name="Mood"
+        component={Mood}
+        options={{ headerTitle: 'Mood' }}
       />
-    </ProfileStack.Navigator>
+    </MoodStack.Navigator>
   );
 }
 
