@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
-A mobile app for recording daily moods and communicating with a chat bot for advice/inspiration created using `React Native` and `TypeScript`.
+Moody is a tracker app meant for users to track and reflect on their emotions, as well as provide encouragement for users. It helps improve the mental health of students by providing a private space for them to express their emotions. 
 
 # Splash
 ![Imgur](https://i.imgur.com/ukyafsd.jpg)
