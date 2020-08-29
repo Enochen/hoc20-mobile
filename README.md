@@ -12,9 +12,9 @@ Moody is a tracker app meant for users to track and reflect on their emotions, a
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
+* [Contributors](#contributors)
 * [Contributing](#contributing)
 * [License](#license)
-* [Contact](#contact)
 * [Screenshots](#screenshots)
 
 <!-- ABOUT THE PROJECT -->
@@ -34,6 +34,16 @@ Core features:
 * [NodeJS](https://nodejs.org/en/)
 * [TypeScript](https://www.typescriptlang.org/)
 
+<!-- Contributors -->
+## Contributors
+
+Annabel Lin - [@annabel48lin](https://github.com/annabel48lin) - all273@cornell.edu <br/>
+Enoch Chen - [@Enochen](https://github.com/Enochen) - yc728@cornell.edu <br/>
+Jessica Feng - [@jessfeng](https://github.com/jessfeng) - jyf5@cornell.edu <br/>
+Tony Yang - [@tyang98](https://github.com/tyang98) - txy3@cornell.edu 
+
+Project Link: [https://github.com/Enochen/hoc20-mobile](https://github.com/Enochen/hoc20-mobile)
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -51,16 +61,6 @@ Any contributions you make are **greatly appreciated**.
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-## Contact
-
-Annabel Lin - [@annabel48lin](https://github.com/annabel48lin) - all273@cornell.edu <br/>
-Enoch Chen - [@Enochen](https://github.com/Enochen) - yc728@cornell.edu <br/>
-Jessica Feng - [@jessfeng](https://github.com/jessfeng) - jyf5@cornell.edu <br/>
-Tony Yang - [@tyang98](https://github.com/tyang98) - txy3@cornell.edu 
-
-Project Link: [https://github.com/Enochen/hoc20-mobile](https://github.com/Enochen/hoc20-mobile)
 
 <!-- Screenshots -->
 ## Screenshots
