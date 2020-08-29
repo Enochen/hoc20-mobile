@@ -35,9 +35,9 @@ export default function Home() {
   const screenWidth = Dimensions.get("window").width;
 
   //sample bar graph data
-  const dataStress = [10, 5, 25, 15, 20, 30];
-  const dataEnergy = [1, 5, 2, 30, 20, 15];
-  const dataMood = [3, 5, 24, 13, 10, 14];
+  const dataStress = [4, 5, 7, 3, 10, 9];
+  const dataEnergy = [1, 10, 2, 7, 5, 3];
+  const dataMood = [3, 5, 10, 4, 3, 7];
 
   const navigation = useNavigation();
 
@@ -268,6 +268,7 @@ export default function Home() {
                 navigation.navigate("DetailedStats", {
                   type: StatsType.Stress,
                   data: dataStress,
+                  color: "rgb(255, 171, 171)"
                 })
               }
             >
@@ -289,6 +290,7 @@ export default function Home() {
                 navigation.navigate("DetailedStats", {
                   type: StatsType.Energy,
                   data: dataEnergy,
+                  color: "rgb(175, 248, 219)"
                 })
               }
             >
@@ -309,6 +311,7 @@ export default function Home() {
                 navigation.navigate("DetailedStats", {
                   type: StatsType.Mood,
                   data: dataMood,
+                  color: "rgb(0, 65, 244)"
                 })
               }
             >
