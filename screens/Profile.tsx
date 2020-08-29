@@ -59,21 +59,30 @@ export default () => {
   };
 
   return (
+
     <View style={styles.container}>
+
       <ImageBackground
         source={require("../assets/images/background.png")}
         style={styles.image}
       >
-        <Text style={styles.title}>Profile</Text>
-
-        <View></View>
-
+        <Text style={{
+          fontSize: 30,
+          fontWeight: "bold",
+          marginLeft: "5%",
+          marginBottom: '5%'
+        }}>Profile</Text>
         <View
           style={{
-            marginTop: "8%",
             marginLeft: "2%",
-            flex: 1,
+            marginRight: '2%',
+            width: '95%',
+            backgroundColor: '#C4FAF8',
+            justifyContent: 'center',
+            alignSelf: 'center',
+            height: '35%',
             flexDirection: "row",
+            borderRadius: 10,
           }}
         >
           <Image
@@ -84,12 +93,14 @@ export default () => {
               borderRadius: 400 / 2,
               backgroundColor: "white",
               borderColor: "white",
+              marginLeft: '3%',
+              marginTop: '3%'
             }}
           />
 
-          <View style={{ flex: 1, flexDirection: "column" }}>
+          <View style={{ flex: 1, flexDirection: "column", borderRadius: 10, backgroundColor: '#C4FAF8' }}>
             <Text
-              style={{ fontSize: 30, fontWeight: "bold", marginLeft: "10%" }}
+              style={{ fontSize: 30, fontWeight: "bold", marginLeft: "10%", marginTop: '10%', color: 'black' }}
             >
               Enoch Chen
             </Text>
@@ -99,6 +110,7 @@ export default () => {
                 fontWeight: "bold",
                 marginLeft: "10%",
                 marginTop: "5%",
+                color: 'black'
               }}
             >
               enochen.me
@@ -106,40 +118,37 @@ export default () => {
           </View>
         </View>
 
-        <View style={{ marginTop: "7%", top: "12.5%" }}>
-          <Text
-            style={{
-              fontSize: 30,
-              fontWeight: "bold",
-              marginLeft: "5%",
-            }}
-          >
-            Past Moods
+
+        <Text
+          style={styles.title}
+        >
+          Past Moods
           </Text>
 
-          <Card
-            containerStyle={{
-              backgroundColor: "#FAE3FF",
-              borderColor: "#FAE3FF",
-              borderRadius: 10,
-              alignContent: "center",
-              marginTop: "5%",
-              height: "65%",
-            }}
-          >
-            <ScrollView>
-              <FlatList
-                data={DATA}
-                renderItem={renderItem}
-                keyExtractor={(item) => item.id}
-                extraData={selectedId}
-              />
-            </ScrollView>
-          </Card>
-        </View>
+        <Card
+          containerStyle={{
+            backgroundColor: "#FAE3FF",
+            borderColor: "#FAE3FF",
+            borderRadius: 10,
+            alignContent: "center",
+            marginTop: "5%",
+            height: "35%",
+          }}
+        >
+          <ScrollView>
+            <FlatList
+              data={DATA}
+              renderItem={renderItem}
+              keyExtractor={(item) => item.id}
+              extraData={selectedId}
+            />
+          </ScrollView>
+        </Card>
+
         <Button
           title="Sign Out"
           style={{
+            marginTop: '5%',
             marginBottom: "5%",
             width: "90%",
             justifyContent: "center",
@@ -150,12 +159,13 @@ export default () => {
         />
       </ImageBackground>
     </View>
+
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: "3%",
+
     flex: 1,
   },
   image: {
@@ -167,11 +177,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     marginLeft: "5%",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
+    marginTop: '2%'
   },
   item: {
     padding: 20,
@@ -179,7 +185,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
   otherTitle: {
-    fontSize: 20,
+    fontSize: 15,
     color: "black",
   },
 });
