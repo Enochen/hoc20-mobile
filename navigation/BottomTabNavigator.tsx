@@ -67,7 +67,7 @@ function HomeNavigator() {
       <HomeStack.Screen
         name="DetailedStats"
         component={DetailedStats}
-        initialParams={{type: StatsType.Stress, data: []}}
+        initialParams={{type: StatsType.Stress, data: [5,5,10]}}
         options={{ headerTitle: 'Stats' }}
       />
     </HomeStack.Navigator>

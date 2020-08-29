@@ -21,6 +21,7 @@ import { useNavigation } from "@react-navigation/native";
 import { HomeParamList } from "../types";
 import { StatsType } from "./DetailedStats";
 import { Button } from 'react-native-elements';
+import AsyncStorage from "@react-native-community/async-storage";
 
 export default function Home() {
   const [stress, setStress] = useState(5);
@@ -38,9 +39,12 @@ export default function Home() {
 
   const navigation = useNavigation();
 
-  const onSubmit = (text: string) => {
-    setInfo([...info, text])
-    setText("")
+  const onSubmit = () => {
+    setText("");
+    AsyncStorage.getItem("notes").then(prev => {
+      const notes = prev ? JSON.parse(prev) : [];
+      AsyncStorage.setItem('notes', JSON.stringify([...notes, text]));
+    })
     Alert.alert(
       "Mood Recorded",
       "Thanks for recording your mood today! You can view your past moods on your profile.",

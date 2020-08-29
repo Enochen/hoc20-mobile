@@ -67,6 +67,7 @@ export default ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
       },
       signOut: async () => {
         await AsyncStorage.removeItem("userToken");
+        await AsyncStorage.removeItem("notes");
         dispatch({ type: "SIGN_OUT" });
       },
     }),
