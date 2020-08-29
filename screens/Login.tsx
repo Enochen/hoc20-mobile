@@ -2,9 +2,11 @@ import * as React from "react";
 import {
   View,
   StyleSheet,
+  ImageBackground,
+  Image,
 } from "react-native";
 import * as GoogleSignIn from "expo-google-sign-in";
-import {  useEffect } from "react";
+import { useEffect } from "react";
 import { AuthContext } from "../navigation";
 import { Button } from 'react-native-elements';
 import { Dimensions } from "react-native";
@@ -49,7 +51,19 @@ export default () => {
 
   return (
     <View style={styles.container}>
-      <Button title="Log In" onPress={signInAsync} style={{ width: screenWidth * .9, borderRadius: 10 }} />
+      <ImageBackground source={require('../assets/images/login.png')} style={styles.image}>
+        <Image
+          source={require('../assets/images/icon-transparent.png')}
+          style={{ alignContent: 'center', justifyContent: 'center' }}
+        />
+        <Image
+          source={require('../assets/images/name.png')}
+          style={{ alignContent: 'center', justifyContent: 'center', width: '80%', marginLeft: '10%' }}
+        />
+
+
+        <Button title="Log In" onPress={signInAsync} style={{ width: screenWidth * .9, borderRadius: 10, justifyContent: 'center', alignSelf: 'center', marginTop: '15%' }} />
+      </ImageBackground>
     </View>
   );
 };
@@ -57,7 +71,10 @@ export default () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+  },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
   },
 });
