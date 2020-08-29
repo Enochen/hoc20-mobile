@@ -236,7 +236,7 @@ export default function Home() {
             <Button
               title="Submit"
               style={{ marginBottom: '2%', width: '90%', justifyContent: 'center', alignSelf: 'center', borderRadius: 20, }}
-              onPress={() => onSubmit(text)}
+              onPress={onSubmit}
             />
           </Card>
 
@@ -331,7 +331,6 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: "3%",
     flex: 1,
   },
   image: {
@@ -359,7 +358,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     marginLeft: "5%",
-    marginTop: '3%'
+    marginTop: '3%',
   },
   separator: {
     marginVertical: 30,
