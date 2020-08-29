@@ -227,6 +227,7 @@ export default function Home() {
                 borderRadius: 10,
                 shadowRadius: 10,
                 shadowOpacity: 0.5,
+                textAlign: "center"
               }}
               onChangeText={(text) => setText(text)}
               value={text}

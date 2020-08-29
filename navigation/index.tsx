@@ -27,8 +27,8 @@ type Context = {
 };
 
 const initContext: Context = {
-  signIn: async () => { },
-  signOut: async () => { },
+  signIn: async () => {},
+  signOut: async () => {},
 };
 
 export const AuthContext = React.createContext(initContext);
@@ -54,7 +54,7 @@ export default ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
         if (userToken !== null) {
           dispatch({ type: "SIGN_IN", userToken });
         }
-      } catch (e) { }
+      } catch (e) {}
     };
     bootstrapAsync();
   }, []);
@@ -73,6 +73,7 @@ export default ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
     }),
     []
   );
+
 
   const navigator = state.userToken ? <RootNavigator /> : <AuthNavigator />;
 
